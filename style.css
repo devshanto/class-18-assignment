@@ -1,0 +1,458 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+img {
+    max-width: 100%;
+}
+.mid-content {
+    width: 1200px;
+    margin: auto;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.text-left {
+    text-align-last: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+body,h1,h2,h3,h4,h5,h6,span,a {
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+/* header ccss start */
+.header {
+    background: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+	border-bottom: 1px solid #ddd;
+}
+.header-logo {
+}
+.header-logo img {
+    width: 100px;
+    padding: 5px;
+}
+.header-menu {
+}
+.header-menu ul {
+    text-align: right;
+}
+.header-menu ul li {
+    display: inline-block;
+}
+.header-menu ul li a {
+	color: black;
+	text-decoration: none;
+	padding: 0px 18px;
+	line-height: 77px;
+	font-size: 16px;
+    display: inline-block;
+}
+.header-menu ul li a:hover {
+    color: rgb(54, 52, 52);
+    transition: .4s;
+}
+/* header css end */
+
+/* banner css start*/
+.banner {
+	background: url(https://i.ibb.co/GJ6MR8f/kobu-agency-IWLR561-Yb-MY-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 250px 0px;
+	position: relative;
+	z-index: 1;
+	padding-top: 240px;
+}
+.banner::after{
+    content: "";
+    display: block;
+    background-color: rgba(0,0,0, .4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.banner-text{
+    color: white;
+    text-align: center;
+    
+}
+.banner-text h3 {
+	font-size: 25px;
+	font-weight: 500;
+}
+.banner-text h2 {
+	font-size: 60px;
+	margin: 25px 0px;
+}
+.banner-btn {
+	color: rgb(125,125,125);
+	text-decoration: none;
+	background: white;
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 20px;
+	margin-right: 5px;
+	margin-left: 5px;
+	border-radius: 10px;
+    font-weight: 500;
+}
+.banner-btn:hover{
+    background-color: rgb(215,162,64);
+    color: white;
+    transition: .5s;
+}
+/* banner css end */
+
+/* pricing section css start  */
+.pricing-section {
+	background-color: rgb(247,247,247);
+	padding: 60px 0px;
+}
+.pricing-content {
+	text-align: center;
+}
+.pricing-content h1 {
+	font-size: 50px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+.pricing-content p {
+	color: #473d3d;
+	font-size: 17px;
+}
+.pricing-table-item {
+	background-color: white;
+	box-shadow: 0px 0px 10px rgba(0, 0, 255, .1);
+	margin-top: 80px;
+	width: 32%;
+	margin-right: 24px;
+	box-sizing: border-box;
+}
+.pricing-table-item:nth-child(3){
+    margin-right: 0px;
+}
+.pricing-table-top {
+	padding: 0px 30px;
+	border-bottom: 2px solid rgb(245,245,245);
+}
+.pricing-table-top h3 {
+	padding-top: 25px;
+	font-size: 25px;
+	font-weight: 400;
+}
+.pricing-table-top h1 {
+	font-size: 50px;
+	margin: 20px 0px;
+    background-color: rgba(221, 221, 221, .1);
+}
+.pricing-table-top span {
+	text-transform: lowercase;
+	font-size: 25px;
+}
+.pricing-table-top h4 {
+	font-size: 20px;
+	font-weight: 400;
+}
+.pricing-table-top p {
+	font-weight: 400;
+	font-size: 17px;
+	margin-top: 15px;
+    margin-bottom: 15px;
+}
+.pricing-table-list {
+	padding: 40px 0px;
+}
+.pricing-table-list ul li {
+	list-style: none;
+	color: grey;
+	font-size: 22px;
+	margin-bottom: 30px;
+}
+.pricing-table-list ul li span {
+	color: rgb(230,146,48);
+	font-size: 27px;
+	padding: 0px 30px;
+}
+.pricing-table-btn{
+    text-align: center;
+    padding: 20px 0px;
+}
+.pricing-btn {
+	box-shadow: 0px 0px 10px #0000ff45;
+	margin-bottom: 15px;
+}
+.pricing-table-item:hover .pricing-table-top{
+    background-color: rgb(215,162,64);
+    color: white;
+    transition: .5s;
+}
+.pricing-table-item:hover .pricing-btn{
+    background-color: rgb(215,162,64);
+    color: white;
+    transition: .5s;
+}
+/* pricing section css end  */
+
+/* team section css start*/
+.team{
+    padding: 80px 0px;
+}
+.team-caption h2 {
+	font-size: 35px;
+	text-align: center;
+	font-weight: 400;
+}
+.team-member {
+	border-left: 2px solid rgb(215,162,64);
+	border-top: 2px solid rgb(215,162,64);
+	border-right: 2px solid rgb(215,162,64);
+	border-bottom: 2px solid rgb(234,207,201);
+	margin-top: 70px;
+	width: 24%;
+	box-sizing: border-box;
+	margin-right: 15px;
+}
+.team-member:nth-child(4){
+    margin-right: 0;
+}
+.team-member h4 {
+	margin-left: 25px;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.team-member p {
+	margin-left: 25px;
+	color: grey;
+	margin-bottom: 20px;
+}
+/* team section css end*/
+
+/* newsleettter css start  */
+.newsletter{
+	background-color: rgb(245,245,245);
+	padding: 70px 0px;
+	text-align: center;
+}
+.newsletter-inner p {
+	color: rgb(0,0,0, .7);
+	font-size: 20px;
+	font-weight: 300;
+}
+.newsletter-inner h1 {
+	font-size: 50px;
+	margin: 50px 0px;
+	font-weight: 500;
+}
+.email-form {
+	font-size: 25px;
+	padding: 20px 18px;
+	width: 530px;
+	border-radius: 10px;
+	border: 2px solid rgb(189,199,49);
+}
+.email-form:focus {
+	outline: none;
+	box-shadow: 0px 0px 11px rgba(44, 44, 224, .4);
+	/* border: none; */
+}
+.newsletter-btn {
+	margin-top: 25px;
+	background: rgb(170,151,44);
+	color: white;
+	padding: 15px 60px;
+	font-size: 25px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 500;
+	border-radius: 10px;
+	border: 1px solid rgb(170,151,44);
+	transition: .5s;
+}
+.newsletter-btn:hover{
+	background-color: #fff;
+	color: rgb(170,151,44);
+}
+/* newsleettter css end */
+
+/* category css start */
+
+.category-header h2{
+	text-align: center;
+	font-size: 40px;
+	margin: 20px 0px;
+}
+.category-img{
+	width: 40%;
+}
+.category-content{
+	width: 58%;
+}
+.category-item{
+	padding: 20px 0px;
+}
+.category-item h3 {
+	font-size: 20px;
+	color: rgb(85,85,85);
+	margin-bottom: 15px;
+	font-weight: 600;
+}
+.category-item span {
+	margin-right: 20px;
+	font-size: 22px;
+}
+.category-item p {
+	color: rgb(85,85,85);
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.6em;
+	text-transform: lowercase;
+}
+/* category css end*/
+
+/* .feedback section css start  */
+.feedback-section{
+	padding: 80px 0px;
+	background-color: rgb(245,245,245);
+}
+.feedback-caption{
+	text-align: center;
+}
+.feedback-caption p {
+	font-size: 18px;
+	font-weight: 300;
+}
+.feedback-caption h1 {
+	font-size: 45px;
+	font-weight: 400;
+	margin: 40px 0px;
+}
+.feedback-items{
+	padding-top: 50px;
+}
+.feedback-item {
+	width: 32%;
+	border: 1px solid rgb(204,204,204);
+	padding-bottom: 20px;
+	box-sizing: border-box;
+	margin-right: 24px;
+	box-shadow: 0px 0px 10px rgba(44, 44, 224, .1);
+}
+.feedback-item:nth-child(3){
+	margin-right: 0px;
+}
+.feedback-content{
+	position: relative;
+}
+.feedback-content::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 164px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 20px 0 20px;
+	border-color: #ffffff transparent transparent transparent;
+}
+.feedback-content p {
+	color: rgb(139, 139, 139);
+	background: white;
+	padding: 45px 30px;
+	font-size: 19px;
+	line-height: 2em;
+}
+.feedback-content span {
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	opacity: .2;
+	font-size: 60px;
+}
+.feedback-user {
+	margin: 40px 50px;
+}
+.feedback-user img {
+	width: 90px;
+	border: 8px solid rgb(170,151,44);
+	float: left;
+	margin-right: 30px;
+}
+.feedback-user h4 {
+	padding-top: 25px;
+	font-size: 20px;
+	font-weight: 400;
+	padding-bottom: 10px;
+}
+.feedback-user p {
+	color: grey;
+	font-size: 20px;
+}
+/* .feedback section css end */
+/* contact form css start  */
+.contact{}
+.contact-top{
+	margin: 80px 0px;
+	text-align: center;
+}
+.contact-top h2 {
+	font-size: 30px;
+	font-weight: 400;
+}
+.contact-top p {
+	font-size: 20px;
+	font-weight: 300;
+	color: #585353;
+	margin: 20px 0px;
+	line-height: 1.7em;
+}
+.contact-form{
+	text-align: center;
+}
+.email-form1 {
+	font-size: 25px;
+	padding: 20px 18px;
+	width: 630px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	border: 2px solid rgb(189,199,49);
+	color: grey;
+}
+.email-form1:focus {
+	outline: none;
+	box-shadow: 0px 0px 11px rgba(44, 44, 224, .4);
+}
+.tel-text {
+	width: 290px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.footer p {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 300;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+/* contact form css end  */
